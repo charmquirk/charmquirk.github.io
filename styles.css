@@ -1,0 +1,122 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: block;
+	font-family: 'Times New Roman', serif;
+	color: black;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	
+	/* background-image: url('images/stripes.png'); */
+    /* background-size: auto; Adjusts the background image size to cover the entire element */
+    /* background-position: center; /* Centers the background image */
+	/* background-repeat: repeat; */
+	background: rgb(9,9,121);
+	background: linear-gradient(180deg, rgba(128,128,128,1) 35%, rgba(255,255,255,1) 100%);
+}
+
+.page {
+	width: 960px;
+	min-width: 40%;
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 1.5em;
+	background: #ffffff;
+}
+
+.container {
+	display: flex;
+}
+
+.content { /* Experience, Projects, Contact*/
+	display: block;
+	width: 100%;
+}
+
+aside {
+	padding: 0 1em;
+	margin: 1 0 0 0;
+	background: #D5D1C9;
+	border-top: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+	border-bottom: 2px solid #60615F;
+	border-right: 2px solid #60615F;
+	box-shadow: 0 0 0 2px #000000;
+	margin: 0 1em 0 0 ;
+}
+
+.navlist {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navlist a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.navlist li {
+	
+	border-top: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+	border-bottom: 2px solid #60615F;
+	border-right: 2px solid #60615F;
+	background: #D5D1C9;
+	padding: 0.5em;
+}
+
+	
+
+.navlist li:hover {
+	border-bottom: 2px solid #ffffff;
+	border-right: 2px solid #ffffff;
+	border-top: 2px solid #60615F;
+	border-left: 2px solid #60615F;
+	padding: 0.5em;
+	
+	color: #ffffff;
+}
+	
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+.label {
+	background: rgb(9,9,121);
+	background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(255,255,255,1) 100%);
+	color: white;
+	padding: 0 1em;
+}
+
+a, li, p {
+	/* font-size: 24px; */
+}
+
+header h1 {
+	font-size: 4em;
+	line-height: 1em;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+header h2 {
+	margin: 0;
+	color: gray;
+}
+
+header {
+	margin: 0 auto; /* align to center horizontally */
+	justify-content: center; /* center middle horizontally */
+	align-items: center; /* center portfolio with name */
+	text-align: center;
+	
+}
