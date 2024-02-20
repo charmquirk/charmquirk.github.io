@@ -21,10 +21,11 @@ html, body {
 
 }
 
-a, h1, h2, li, ol, p, ul {
+a, caption, h1, h2, li, ol, p, table, td, th, ul {
 	margin: 0;
 	padding: 0;
 	line-height: 1.2em;
+	border: none;
 }
 
 ol, ul {
@@ -42,12 +43,11 @@ h2 {
 }
 
 .page {
-	max-height: 100vh;
+	/* max-height: 100vh; */
 	width: 100%; /* resets */
 	min-width: 60vw;
 	max-width: 133.33vh;
 	margin: 0 auto;
-	
 	border: 2px solid black;
 	padding: 1.5em;
 	background: #ffffff;
@@ -61,7 +61,6 @@ h2 {
 
 .content { /* Experience, Projects, Contact*/
 	display: block;
-	width: 100%;
 	background: #f0f0f0;
 }
 
@@ -70,6 +69,7 @@ h2 {
 }
 
 aside {
+	height: 100%;
 	padding: 1em;
 	justify-content: flex-start;
 	background: #D5D1C9;
@@ -80,9 +80,12 @@ aside {
 	box-shadow: 0 0 0 2px #000000;
 	margin-right: 1.5em;
 	border-radius: 1em;
+	display: block;
+	/* position:fixed; */
 }
 
-.navlist {
+.navlist, .phone table {
+	width:100%;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -105,25 +108,39 @@ nav img {
 	color: #000000;
 }
 
-.navlist li {
-	
+.phone {
+	padding-top:1em;
+	text-align: center;
+	width:100%;
+	height:100%;
+}
+
+.phone table {
+	/* border-bottom: 2px solid #ffffff; */
+	/* border-right: 2px solid #ffffff; */
+	/* border-top: 2px solid #60615F; */
+	/* border-left: 2px solid #60615F; */
+	/* width: (100% + 4px); */
+	border-spacing: 2px;
+	border-collapse: separate;
+}
+
+.navlist li, .phone table td, .phone table caption {
 	border-top: 2px solid #ffffff;
 	border-left: 2px solid #ffffff;
 	border-bottom: 2px solid #60615F;
 	border-right: 2px solid #60615F;
 	background: #D5D1C9;
-	padding: 0.5em;
+	padding: 0.25em;
 }
 
 	
 
-.navlist li:hover {
+.navlist li:hover, .phone table td:hover, .phone table caption:hover {
 	border-bottom: 2px solid #ffffff;
 	border-right: 2px solid #ffffff;
 	border-top: 2px solid #60615F;
 	border-left: 2px solid #60615F;
-	padding: 0.5em;
-	
 	color: #ffffff;
 }
 	
@@ -154,6 +171,7 @@ header {
 	align-items: center; /* center portfolio with name */
 	text-align: center;
 	padding-bottom: 1.5em;
+	
 }
 
 /* @media (min-aspect-ratio: 4/3) { */
