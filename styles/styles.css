@@ -103,7 +103,7 @@ nav img {
 }
 
 
-.navlist a {
+.navlist a{
 	text-decoration: none;
 	color: #000000;
 }
@@ -151,6 +151,33 @@ nav img {
 	background: linear-gradient(90deg, #090979 33%, #f0f0f0 100%);
 	color: white;
 	padding: 0.5em;
+}
+
+.jobTitle p, .workLocation p {
+	display: inline-block;
+}
+
+.jobTitle p:last-child, .workLocation p:last-child {
+	float:right;
+}
+
+.jobTitle p {
+	font-size: 1.5em;
+}
+
+.workLocation p {
+	font-size:1em;
+	padding-bottom: .25em;
+}
+
+.textbox ol {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+.textbox ul {
+	padding-bottom: 2em;
 }
 
 header h1 {
