@@ -57,20 +57,22 @@ p {
 .page {
 	width: 100%; /* resets later */
 	min-width: 60vw;
-	max-width: 133.33vh;
+	max-width: 133vh;
 	margin: 2em auto;
 	border: 2px solid black;
-	padding: 1.5em;
+	padding: 0 1.5em; /* page padding */
 	background: #ffffff;
 	position: relative;
-
+	
 }
 
 .container {
+	width: 100%;
 	display: flex;
 }
 
 .content { /* Experience, Projects, Contact*/
+	width: 100%;
 	display: block;
 	background: #f0f0f0;
 	margin-left: auto;
@@ -106,7 +108,7 @@ header {
 	justify-content: center; /* center middle horizontally */
 	align-items: center; /* center portfolio with name */
 	text-align: center;
-	padding-bottom: 1.5em;
+	padding: 1.5em 0;
 }
 
 /* Footer */
@@ -155,7 +157,6 @@ nav h2 {
 	background: #090979;
 	background: linear-gradient(90deg, #090979 33%, #f0f0f0 100%);
 	padding: 1em;
-
 }
 
 .label h2 {
@@ -190,4 +191,38 @@ nav h2 {
 
 #Resume ol > li {
 	padding-bottom: 1.5em;
+}
+
+@media (max-width: 600px) {
+	/* a, button, caption, h1, h2, h3, li, ol, p, table, td, th, ul {
+		font-size: 12px;
+	} */
+	h1 {
+		font-size: 2em;
+		font-weight: bold;
+	}
+	h2 {
+		font-size: 1em;
+		font-weight: bold;
+	}
+	h3 {
+		font-size: 1em;
+		font-weight: bold;
+	}
+	aside {
+		display: none;
+	}
+	.page, .container, .content {
+		margin: 0 auto;
+		max-width: 100vw;
+		padding: 0;
+	}
+	.eTitle h3, .eLocation p {
+		max-width: 60%;
+	}
+	
+	.eTitle h3:last-child, .eLocation p:last-child {
+		text-align: right;
+		max-width: 40%;
+	}
 }
