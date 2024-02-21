@@ -51,8 +51,9 @@ p {
 	font-size: 1em;
 }
 
-/* Main Containers */
 
+
+/* Main Containers */
 .page {
 	width: 100%; /* resets later */
 	min-width: 60vw;
@@ -72,6 +73,7 @@ p {
 .content { /* Experience, Projects, Contact*/
 	display: block;
 	background: #f0f0f0;
+	margin-left: auto;
 }
 
 .textbox {
@@ -79,7 +81,6 @@ p {
 }
 
 aside {
-	height: 100%;
 	padding: 1em;
 	justify-content: flex-start;
 	background: #D5D1C9;
@@ -90,13 +91,14 @@ aside {
 	box-shadow: 0 0 0 2px #000000;
 	margin-right: 1.5em;
 	display: block;
-	/* position:fixed; */
+	
+	float: left;
+	position:fixed;
 }
 
 
 
 /* Header */
-
 header h2 {
 	color: gray;
 }
@@ -109,7 +111,10 @@ header {
 	padding-bottom: 1.5em;
 }
 
-
+/* Footer */
+footer {
+	text-align: center;
+}
 
 /* Navigation */
 
