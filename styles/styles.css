@@ -85,7 +85,7 @@ aside {
 }
 
 .navlist, .phone table {
-	width:100%;
+	width: 100%;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -153,19 +153,19 @@ nav img {
 	padding: 0.5em;
 }
 
-.jobTitle p, .workLocation p {
+.eTitle p, .eLocation p {
 	display: inline-block;
 }
 
-.jobTitle p:last-child, .workLocation p:last-child {
+.eTitle p:last-child, .eLocation p:last-child {
 	float:right;
 }
 
-.jobTitle p {
+.eTitle p {
 	font-size: 1.5em;
 }
 
-.workLocation p {
+.eLocation p {
 	font-size:1em;
 	padding-bottom: .25em;
 }
