@@ -1,13 +1,13 @@
 <!DOCTYPE html> 
-<html> 
+<html lang="en"> 
 	<head> 
 		<title>Andrew J Gates Portfolio</title> 
-		<link href="styles/styles.css" type="text/css" rel="stylesheet" />
+		<link href="styles/styles.css" type="text/css" rel="stylesheet">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head> 
 	<body> 
-		<div class="page" id="Top">
+		<div class="page">
 			<header>
 				<h1>Andrew J Gates</h1>
 				<h2>Portfolio</h2>
@@ -15,58 +15,57 @@
 			<div class="container">
 				<aside>
 					<nav>
-						<img src="images/profile.png" alt="Profile photo of Andrew J Gates">
-						<!-- <h2>Navigation</h2> -->
-						<!-- <ul class="navlist"> -->
-							<!-- <a href="#Top"><li>Top of Page</li></a> -->
-							<!-- <a href="#Experience"><li>Experience</li></a> -->
-							<!-- <a href="#Projects"><li>Projects</li></a> -->
-							<!-- <a href="#Contact"><li>Contact</li></a> -->
-						<!-- </ul> -->
-						<div class="phone">
-							<table>
-								<a href="#Contact"><caption>&#9743; Contact &#9993;</caption></a>
-								<tr><td>1</td><td>2</td><td>3</td></tr>
-								<tr><td>4</td><td>5</td><td>6</td></tr>
-								<tr><td>7</td><td>8</td><td>9</td></tr>
-								<tr><td>*</td><td>0</td><td>#</td></tr>
-							</table>
-						</div>
+						<!-- <img src="images/profile.png" alt="Profile photo of Andrew J Gates"> -->
+						<h2>Navigation</h2>
+						<ul class="navlist">
+							<li><button onclick="#Education">Education</button></li>
+							<li><button onclick="#Experience">Experience</button></li>
+							<li><button onclick="#Contact">Contact</button></li>
+							<li><button onclick="#Projects">Projects</button></li>
+						</ul>
 					</nav>
 				</aside>
-				<div class="content">
-					<div id="Education">
+				<div class="content" id="Resume">
+					<div id="Education" class="labeled-box">
 						<div class="label">
 							<h2>Education</h2>
 						</div>
 						<div class="textbox">
-							<div class="eTitle">
-								<p>Computer Science (B.S.), Applied Computing</p>
-								<p>Jan 2024 - Now</p>
-							</div>
-							<div class="eLocation">
-								<p>State University of New York Oneonta</p>
-								<p>Oneonta, NY 13820, United States</p>
-							</div>
-							<div class="eTitle">
-								<p>Liberal Arts & Sciences (A.S.), GPA 3.675</p>
-								<p>May 2023</p>
-							</div>
-							<div class="eLocation">
-								<p>State University of New York Broome Community College</p>
-								<p>Binghamton, NY 13901, United States</p>
-							</div>
-							<div class="eTitle">
-								<p>Regents Diploma, GPA 3.6</p> <!-- (with Advanced Designation in Science, English, and Spanish) -->
-								<p>Jun 2019</p>
-							</div>
-							<div class="eLocation">
-								<p>Vestal Senior High School</p>
-								<p>Vestal, NY 13850, United States</p>
-							</div>
+							<ol>
+								<li>
+									<div class="eTitle">
+										<h3>Computer Science (B.S.), Applied Computing</h3>
+										<h3>Jan 2024 - Now</h3>
+									</div>
+									<div class="eLocation">
+										<p>State University of New York Oneonta</p>
+										<p>Oneonta, NY 13820, United States</p>
+									</div>
+								</li>
+								<li>
+									<div class="eTitle">
+										<h3>Liberal Arts & Sciences (A.S.), GPA 3.675</h3>
+										<h3>May 2023</h3>
+									</div>
+									<div class="eLocation">
+										<p>State University of New York Broome Community College</p>
+										<p>Binghamton, NY 13901, United States</p>
+									</div>
+								</li>
+								<li>
+									<div class="eTitle">
+										<h3>Regents Diploma, GPA 3.6</h3> <!-- (with Advanced Designation in Science, English, and Spanish) -->
+										<h3>Jun 2019</h3>
+									</div>
+									<div class="eLocation">
+										<p>Vestal Senior High School</p>
+										<p>Vestal, NY 13850, United States</p>
+									</div>
+								</li>
+							</ol>
 						</div>
 					</div>
-					<div id="Experience">
+					<div id="Experience" class="labeled-box">
 						<div class="label">
 							<h2>Experience</h2>
 						</div>
@@ -74,11 +73,11 @@
 							<ol>
 								<li>
 									<div class="eTitle">
-										<p>Dishwasher &amp; Server</p>
-										<p>Oct 2023 - Jan 2024</p>
+										<h3>Dishwasher &amp; Server</h3>
+										<h3>Oct 2023 - Jan 2024</h3>
 									</div>
 									<div class="eLocation">
-										<p>IHOP</p>
+										<p>International House of Pancakes</p>
 										<p>Vestal, NY 13850, United States</p>
 									</div>
 									<ul>
@@ -90,8 +89,8 @@
 								
 								<li>
 									<div class="eTitle">
-										<p>Social Media Manager (Internship)</p>
-										<p>Sep 2022 - Dec 2022</p>
+										<h3>Social Media Manager (Internship)</h3>
+										<h3>Sep 2022 - Dec 2022</h3>
 									</div>
 									<div class="eLocation">
 										<p>Town Square Media, Bryton Acquisition Company, LLC</p>
@@ -105,8 +104,8 @@
 								</li>
 								<li>
 									<div class="eTitle">
-										<p>Deli Associate</p>
-										<p>Mar 2022 - Jul 2022</p>
+										<h3>Deli Associate</h3>
+										<h3>Mar 2022 - Jul 2022</h3>
 									</div>
 									<div class="eLocation">
 										<p>Weis Markets</p>
@@ -114,7 +113,7 @@
 									</div>
 									<ul>
 										<li>Provided personal service to an average of 30 customers a day, while prepping and stocking the deli
-meat/cheeses for the self-service customer case.</li>
+	meat/cheeses for the self-service customer case.</li>
 										<li>Skilled in handling, maintaining, and cleaning complex machinery for food preparation.</li>
 										<li>Trained new employees on all aspects of the deli counter and providing exceptional customer service.</li>
 									</ul>
@@ -122,8 +121,8 @@ meat/cheeses for the self-service customer case.</li>
 									
 								<li>
 									<div class="eTitle">
-										<p>Call Center Representative</p>
-										<p>Dec 2020 - Feb 2021</p>
+										<h3>Call Center Representative</h3>
+										<h3>Dec 2020 - Feb 2021</h3>
 									</div>
 									<div class="eLocation">
 										<p>Paper Alternative Solutions / Conduent</p>
@@ -137,8 +136,8 @@ meat/cheeses for the self-service customer case.</li>
 								</li>
 								<li>
 									<div class="eTitle">
-										<p>Lifeguard</p>
-										<p>May 2017 – Aug 2018</p>
+										<h3>Lifeguard</h3>
+										<h3>May 2017 – Aug 2018</h3>
 									</div>
 									<div class="eLocation">
 										<p>Town of Vestal Recreation</p>
@@ -146,7 +145,7 @@ meat/cheeses for the self-service customer case.</li>
 									</div>
 									<ul>
 										<li>Actively surveilled up to 300 patrons, answering concerns, instructing safety precautions, and tending to the
-first aid of any injured patrons.</li>
+	first aid of any injured patrons.</li>
 										<li>Completed 8-week Lifeguard and First Aid Certification and trained once a week after certification.</li>
 										<li>Regularly swam 30 laps before each shift.</li>
 										<li>Cooperated with a team of 8 other lifeguards.</li>
@@ -155,7 +154,7 @@ first aid of any injured patrons.</li>
 							</ol>
 						</div>
 					</div>
-					<div id="Contact">
+					<div id="Contact" class="labeled-box">
 						<div class="label">
 							<h2>Contact</h2>
 						</div>
@@ -167,7 +166,7 @@ first aid of any injured patrons.</li>
 							</ul>
 						</div>
 					</div>
-					<div id="Projects">
+					<div id="Projects" class="labeled-box">
 						<div class="label">
 							<h2>Projects</h2>
 						</div>
