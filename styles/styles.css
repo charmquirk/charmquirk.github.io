@@ -81,8 +81,8 @@ p {
 .content { /* Experience, Projects, Contact*/
 	display: block;
 	background: #f0f0f0;
-	float: right;
 	margin: 0 auto;
+	margin-left: 13em;
 }
 
 .textbox {
@@ -91,14 +91,12 @@ p {
 
 aside {
 	padding: 1em;
-	justify-content: flex-start;
 	background: #D5D1C9;
 	border-top: 2px solid #ffffff;
 	border-left: 2px solid #ffffff;
 	border-bottom: 2px solid #60615F;
 	border-right: 2px solid #60615F;
 	box-shadow: 0 0 0 2px #000000;
-	display: flex;
 	float: left;
 	position: fixed;
 }
@@ -232,12 +230,12 @@ footer {
 		width: 100vw; 
 	}
 } */
-
-@media (max-height: 640px), (max-width:480px){
+/* Hide navigation */
+/* @media (max-height: 640px), (max-width:480px){
 	aside {
-		display: none; /* Hide navigation */
+		display: none; 
 	}
-}
+} */
 
  /* add space/padding between page and browser */
  /* if the viewport isn't tiny OR the aspect ratio is not landscape */
@@ -260,10 +258,19 @@ footer {
 		font-size: 1em;
 		font-weight: bold;
 	}
+	nav h2 {
+		font-size: 1.5em;
+	}
+	button {
+		font-size: 1em;
+	}
 	
 	.page {
 		margin: auto;
 		padding: 0;
+	}
+	.content {
+		margin-left: 10em;
 	}
 
 	.textbox {
