@@ -145,6 +145,7 @@ header {
 
 nav h2 {
 	padding-bottom: 0.5em;
+	text-align: center;
 }
 
 .navlist button {
@@ -258,22 +259,17 @@ footer {
 		font-size: 1em;
 		font-weight: bold;
 	}
-	nav h2 {
-		font-size: 1.5em;
-	}
-	button {
-		font-size: 1em;
-	}
-	
 	.page {
 		margin: auto;
 		padding: 0;
 	}
 	.content {
-		margin-left: 10em;
+		margin-left: 7.9em;
 	}
-
-	.textbox {
+	button {
+		font-size: 1em;
+	}
+	.textbox, aside {
 		padding: 0.5em;
 	}
 
