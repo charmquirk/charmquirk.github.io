@@ -1,16 +1,29 @@
 /* Setting Defaults */
+
 html, body {
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
 	height: 100%;
+	max-width: 100vw;
 	display: block;
 	border: none;
 	background: rgb(9,9,121);
-	background: linear-gradient(180deg, rgba(9,9,121,1) 20%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(180deg, #090979 20%, #f0f0f0 100%);
 	background-size: cover; /* Adjusts the background image size to cover the entire element */
 	background-position: center; /* Centers the background image */
 	background-attachment: fixed;
+	width: 65em;
+	min-height: 256px;
+	min-width: 256px;
+	max-width: 100vw;
+}
+
+aside, div, header, footer {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
 }
 
 a, button, caption, h1, h2, h3, li, ol, p, table, td, th, ul {
@@ -22,7 +35,6 @@ a, button, caption, h1, h2, h3, li, ol, p, table, td, th, ul {
 	font-weight: normal;
 	font-style: normal;
 	line-height: 1.25em;
-
 }
 
 ol, ul {
@@ -54,28 +66,23 @@ p {
 
 
 /* Main Containers */
+
 .page {
-	width: 100%; /* resets later */
-	min-width: 60vw;
-	max-width: 133vh;
-	margin: 2em auto;
+	margin: 0 auto;
 	border: 2px solid black;
-	padding: 0 1.5em; /* page padding */
+	padding: 1.5em; /* page padding */
 	background: #ffffff;
-	position: relative;
-	
 }
 
 .container {
-	width: 100%;
 	display: flex;
 }
 
 .content { /* Experience, Projects, Contact*/
-	width: 100%;
 	display: block;
 	background: #f0f0f0;
-	margin-left: auto;
+	float: right;
+	margin: 0 auto;
 }
 
 .textbox {
@@ -99,6 +106,7 @@ aside {
 
 
 /* Header */
+
 header h2 {
 	color: gray;
 }
@@ -108,13 +116,14 @@ header {
 	justify-content: center; /* center middle horizontally */
 	align-items: center; /* center portfolio with name */
 	text-align: center;
-	padding: 1.5em 0;
+	padding: 1.5em;
 }
 
-/* Footer */
-footer {
-	text-align: center;
+.mini-contacts {
+	display: none;
 }
+
+
 
 /* Navigation */
 
@@ -193,10 +202,38 @@ nav h2 {
 	padding-bottom: 1.5em;
 }
 
-@media (max-width: 600px) {
-	/* a, button, caption, h1, h2, h3, li, ol, p, table, td, th, ul {
-		font-size: 12px;
-	} */
+
+
+/* Footer */
+footer {
+	text-align: right;
+}
+
+
+
+/* Media Queries */
+
+/* failsafe for max-width not working*/
+/* @media (min-height:100vw) {
+	.page {
+		width: 100vw; 
+	}
+} */
+
+@media (max-height: 640px), (max-width:480px){
+	aside {
+		display: none; /* Hide navigation */
+	}
+}
+
+
+@media (min-height:640px) and (min-width:101vh) { /* if the viewport isn't tiny OR the aspect ratio is not landscape */
+	body {
+		margin: 1vw auto; /* add space/padding between page and browser */
+	}
+}
+
+@media (max-aspect-ratio: 1/1){
 	h1 {
 		font-size: 2em;
 		font-weight: bold;
@@ -209,20 +246,52 @@ nav h2 {
 		font-size: 1em;
 		font-weight: bold;
 	}
-	aside {
-		display: none;
-	}
-	.page, .container, .content {
-		margin: 0 auto;
-		max-width: 100vw;
+	
+	.page {
+		margin: auto;
 		padding: 0;
 	}
+
+	.textbox {
+		padding: 0.5em;
+	}
+
 	.eTitle h3, .eLocation p {
 		max-width: 60%;
+		clear: left;
 	}
 	
 	.eTitle h3:last-child, .eLocation p:last-child {
 		text-align: right;
 		max-width: 40%;
+	}
+}
+
+@media print {
+	.label {
+		text-transform: uppercase;
+		border-bottom: #000000 2px solid;
+	}
+	.label, .textbox, header {
+		padding: 0;
+	}
+	a {
+		text-decoration: none;
+	}
+	.page {
+		padding: 0;
+		border: none;
+	}
+	aside, footer, .resume-heading {
+		display: none; /* Hide navigation */
+	}
+	.mini-contacts {
+		display: block;
+	}
+	header {
+		padding-bottom: 0.5em;
+	}
+	header h1 {
+		padding-bottom: 0.25em;
 	}
 }
