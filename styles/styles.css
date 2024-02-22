@@ -107,7 +107,7 @@ aside {
 
 /* Header */
 
-header h2 {
+header h2, header a {
 	color: gray;
 }
 
@@ -120,7 +120,18 @@ header {
 }
 
 .mini-contacts {
+	font-weight: normal;
+	font-size: 1.5em;
 	display: none;
+}
+
+.mini-contacts a {
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.mini-contacts a:hover {
+	color: #090979;
 }
 
 
@@ -202,7 +213,9 @@ nav h2 {
 	padding-bottom: 1.5em;
 }
 
-
+#Contact a:hover {
+	color: #090979;
+}
 
 /* Footer */
 footer {
@@ -226,12 +239,13 @@ footer {
 	}
 }
 
-
-@media (min-height:640px) and (min-width:101vh) { /* if the viewport isn't tiny OR the aspect ratio is not landscape */
+ /* add space/padding between page and browser */
+ /* if the viewport isn't tiny OR the aspect ratio is not landscape */
+/* @media (min-height:640px) and (min-width:101vh) {
 	body {
-		margin: 1vw auto; /* add space/padding between page and browser */
+		margin: 1vw auto;
 	}
-}
+} */
 
 @media (max-aspect-ratio: 1/1){
 	h1 {
@@ -287,11 +301,15 @@ footer {
 	}
 	.mini-contacts {
 		display: block;
+		font-size: 1em;
 	}
 	header {
 		padding-bottom: 0.5em;
 	}
 	header h1 {
 		padding-bottom: 0.25em;
+	}
+	#Contact {
+		display: none;
 	}
 }
