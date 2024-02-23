@@ -71,6 +71,8 @@ p {
 	margin: 0 auto;
 	border: 2px solid black;
 	padding: 1.5em; /* page padding */
+	border-top: none;
+	padding-top: 0;
 	background: #ffffff;
 }
 
@@ -90,6 +92,7 @@ p {
 }
 
 aside {
+	margin-top: 1.5em;
 	padding: 1em;
 	background: #D5D1C9;
 	border-top: 2px solid #ffffff;
@@ -99,6 +102,7 @@ aside {
 	box-shadow: 0 0 0 2px #000000;
 	float: left;
 	position: fixed;
+	z-index: 2;
 }
 
 
@@ -115,6 +119,10 @@ header {
 	align-items: center; /* center portfolio with name */
 	text-align: center;
 	padding: 1.5em;
+	background: #ffffff;
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 
 .mini-contacts {
@@ -172,10 +180,16 @@ nav h2 {
 
 /* Main Content */
 
+/* .labeled-box {
+	
+} */
+
 .label {
 	background: #090979;
 	background: linear-gradient(90deg, #090979 33%, #f0f0f0 100%);
 	padding: 1em;
+	position: sticky;
+	top: 8.99em;
 }
 
 .label h2 {
@@ -208,7 +222,7 @@ nav h2 {
 	list-style: square;
 }
 
-#Resume ol > li {
+#Resume ol > li:not(:last-child) { /* Bottom margin/padding for list items */
 	padding-bottom: 1.5em;
 }
 
@@ -218,7 +232,7 @@ nav h2 {
 
 /* Footer */
 footer {
-	text-align: right;
+	text-align: center;
 }
 
 
@@ -263,6 +277,11 @@ footer {
 		margin: auto;
 		padding: 0;
 	}
+	.container {
+		display: flex;
+		
+		justify-content: left;
+	}
 	.content {
 		margin-left: 7.9em;
 	}
@@ -271,8 +290,11 @@ footer {
 	}
 	.textbox, aside {
 		padding: 0.5em;
+		margin: 0;
 	}
-
+	.label {
+		top: 6em;
+	}
 	.eTitle h3, .eLocation p {
 		max-width: 60%;
 		clear: left;
@@ -292,12 +314,21 @@ footer {
 	.label, .textbox, header {
 		padding: 0;
 	}
+	.textbox {
+		padding: 0.5em 0;
+	}
+	#Resume ol > li:not(:last-child) { /* Bottom margin/padding for list items */
+		padding-bottom: 1em;
+	}
 	a {
 		text-decoration: none;
 	}
 	.page {
 		padding: 0;
 		border: none;
+	}
+	.content {
+		margin: 0;
 	}
 	aside, footer, .resume-heading {
 		display: none; /* Hide navigation */
