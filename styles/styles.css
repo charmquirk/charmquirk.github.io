@@ -1,3 +1,30 @@
+/* Variables */
+:root {
+
+	/* Window Dialog Bar */
+	--win-left: #000080;
+	--win-right: #1084d0;
+	/* Window Buttons */
+	--win-lowest: #000000;
+	--win-low: #60615F;
+	--win-main: #D5D1C9;
+	--win-highest: #ffffff;
+	/* OS Background */
+	--win-background: #008080;
+	
+	/* Page Elements */
+	--html: var(--win-background);
+	--page: var(--win-highest);
+	--content: #f0f0f0;
+	--text: #000000;
+	--text-clicked: gray;
+	--gradient-left: var(--win-left);
+	--gradient-right: var(--content);
+	--main: #FF8000;
+	
+}
+
+
 /* Setting Defaults */
 
 html, body {
@@ -8,8 +35,9 @@ html, body {
 	max-width: 100vw;
 	display: block;
 	border: none;
-	background: rgb(9,9,121);
-	background: linear-gradient(180deg, #090979 20%, #f0f0f0 100%);
+	background-color: var(--html);
+	/* background: linear-gradient(180deg, var(--gradient-left) 20%, var(--gradient-right) 100%); */
+	background-image: url("../images/background/clouds1024.png");
 	background-size: cover; /* Adjusts the background image size to cover the entire element */
 	background-position: center; /* Centers the background image */
 	background-attachment: fixed;
@@ -30,11 +58,23 @@ a, button, caption, h1, h2, h3, li, ol, p, table, td, th, ul {
 	margin: 0;
 	padding: 0;
 	font-family: 'Times New Roman', serif;
-	color: black;
+	color: var(--text);
 	font-size: 16px;
 	font-weight: normal;
 	font-style: normal;
 	line-height: 1.25em;
+}
+
+a:hover {
+	color: var(--low-light);
+}
+
+a:focus {
+	outline: 2px dotted var(--win-lowest);
+}
+
+a:active {
+	color: var(--text-clicked);
 }
 
 ol, ul {
@@ -73,7 +113,7 @@ p {
 	padding: 1.5em; /* page padding */
 	border-top: none;
 	padding-top: 0;
-	background: #ffffff;
+	background: var(--page);
 }
 
 .container {
@@ -82,7 +122,7 @@ p {
 
 .content { /* Experience, Projects, Contact*/
 	display: block;
-	background: #f0f0f0;
+	background: var(--content);
 	margin: 0 auto;
 	margin-left: 13em;
 }
@@ -92,17 +132,8 @@ p {
 }
 
 aside {
-	margin-top: 1.5em;
-	padding: 1em;
-	background: #D5D1C9;
-	border-top: 2px solid #ffffff;
-	border-left: 2px solid #ffffff;
-	border-bottom: 2px solid #60615F;
-	border-right: 2px solid #60615F;
-	box-shadow: 0 0 0 2px #000000;
-	float: left;
-	position: fixed;
-	z-index: 2;
+	
+	border: none;
 }
 
 
@@ -119,7 +150,7 @@ header {
 	align-items: center; /* center portfolio with name */
 	text-align: center;
 	padding: 1.5em;
-	background: #ffffff;
+	background: var(--page);
 	position: sticky;
 	top: 0;
 	z-index: 1;
@@ -136,13 +167,58 @@ header {
 	font-size: 1em;
 }
 
-.mini-contacts a:hover {
-	color: #090979;
-}
-
 
 
 /* Navigation */
+
+nav {
+	margin-top: 1.5em;
+	padding: 1em;
+	background: var(--win-main);
+	border-top: 2px solid var(--win-highest);
+	border-left: 2px solid var(--win-highest);
+	border-bottom: 2px solid var(--win-low);
+	border-right: 2px solid var(--win-low);
+	outline: 2px solid var(--win-lowest);
+	float: left;
+	position: fixed;
+	z-index: 2;
+}
+
+.nav-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 0.5em;
+}
+
+.nav-header > :first-child {
+	padding-right: .5em;
+}
+
+.nav-header img {
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-header a:hover {
+	filter: brightness(125%);
+}
+
+.nav-header a:active {
+	filter: brightness(75%);
+}
+
+.nav-header a:focus:hover {
+	background: var(--win-highest);
+}
+
+.nav-header h3 {
+	text-align: center;
+	font-weight: bold;
+}
 
 .navlist {
 	width: 100%;
@@ -151,42 +227,44 @@ header {
 	padding: 0;
 }
 
-nav h2 {
-	padding-bottom: 0.5em;
-	text-align: center;
-}
-
 .navlist button {
 	width: 100%;
 	height: 100%;
-	border-top: 2px solid #ffffff;
-	border-left: 2px solid #ffffff;
-	border-bottom: 2px solid #60615F;
-	border-right: 2px solid #60615F;
-	background: #D5D1C9;
+	position: relative;
+	border-top: 2px solid var(--win-highest);
+	border-left: 2px solid var(--win-highest);
+	border-bottom: 2px solid var(--win-low);
+	border-right: 2px solid var(--win-low);
+	background: var(--win-main);
 	padding: 0.5em;
 	text-align: left;
+	z-index: 0;
 }
 	
-.navlist button:hover {
-	border-bottom: 2px solid #ffffff;
-	border-right: 2px solid #ffffff;
-	border-top: 2px solid #60615F;
-	border-left: 2px solid #60615F;
-	color: #ffffff;
+.navlist button:hover{
+	outline: 2px solid var(--win-lowest);
+	z-index: 1;
+}
+
+.navlist button:active {
+	border-top: 2px solid var(--win-low);
+	border-left: 2px solid var(--win-low);
+	border-bottom: 2px solid var(--win-highest);
+	border-right: 2px solid var(--win-highest);
+}
+
+.navlist button:focus:not(:active) {
+	outline: 2px dotted var(--win-lowest);
+	outline-offset: -8px;
 }
 
 
 
 /* Main Content */
 
-/* .labeled-box {
-	
-} */
-
 .label {
-	background: #090979;
-	background: linear-gradient(90deg, #090979 33%, #f0f0f0 100%);
+	background: var(--low-light);
+	background: linear-gradient(90deg, var(--gradient-left) 33%, var(--gradient-right) 100%);
 	padding: 1em;
 	position: sticky;
 	top: 8.99em;
@@ -224,10 +302,6 @@ nav h2 {
 
 #Resume ol > li:not(:last-child) { /* Bottom margin/padding for list items */
 	padding-bottom: 1.5em;
-}
-
-#Contact a:hover {
-	color: #090979;
 }
 
 /* Footer */
@@ -279,16 +353,19 @@ footer {
 	}
 	.container {
 		display: flex;
-		
 		justify-content: left;
 	}
 	.content {
-		margin-left: 7.9em;
+		/* margin-left: 7.9em; */
+		margin: 0;
+	}
+	nav {
+		display: none;
 	}
 	button {
 		font-size: 1em;
 	}
-	.textbox, aside {
+	.textbox {
 		padding: 0.5em;
 		margin: 0;
 	}
