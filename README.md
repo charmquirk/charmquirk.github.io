@@ -1,3 +1,3 @@
 # charmquirk.github.io
 
-Personal [website](https://www.charmquirk.github.io). Features my resume and various creative projects.
+Personal [website](https://charmquirk.github.io/). Features my resume and various creative projects.
