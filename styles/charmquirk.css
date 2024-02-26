@@ -1,0 +1,83 @@
+/* :root {
+	--main: #FF8000;
+	--low-light: #803000;
+} */
+
+html,body {
+	height: 100%;
+	max-height: 100vh;
+}
+
+/* .page {
+	height: 100%;
+} */
+
+/* .container {
+	display: flex;
+} */
+
+.display {
+	height: 6em;
+	width: 6em;
+	background: #000000;
+	margin-bottom: var(--main-padding);
+}
+
+.content {
+	margin: 0;
+	padding:0;
+	float: left;
+	width: 100%
+}
+
+header img {
+	height: 6em;
+	width: 6em;
+	padding-right: 2em;
+}
+
+header {
+	display: flex;
+	justify-content: left;
+}
+
+aside {
+	margin: 0;
+	margin-left: var(--main-padding);
+	padding: 0;
+	float: right;
+	background-color: aqua;
+}
+
+aside img {
+	margin-bottom: var(--main-padding);
+	background: #000000;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 6em;
+	min-height: 6em;
+}
+
+.project-label {
+	border-bottom: 2px solid black;
+	margin-bottom: var(--main-padding);
+}
+
+.description-box {
+	display: flex;
+}
+
+.description-box div:not(:last-child) {
+	margin-right: var(--main-padding);
+	background-color: #ffffff;
+}
+
+.casual-info {
+	width: 100%;
+}
+
+.dev-info {
+	float: right;
+}
