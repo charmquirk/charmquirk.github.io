@@ -192,6 +192,9 @@ ul {
 
 
 @media (max-aspect-ratio: 1/1){
+	:root {
+		--main-padding: 1em;
+	}
 	h1 {
 		font-size: 2em;
 		font-weight: bold;
@@ -222,12 +225,12 @@ ul {
 	button {
 		font-size: 1em;
 	}
-	.textbox {
-		padding: 0.5em;
+	.text-box {
+		padding: var(--main-padding);
 		margin: 0;
 	}
 	.label {
-		top: 6em;
+		top: 5em;
 	}
 	.h3-bold h3, .h3-normal p {
 		max-width: 60%;
@@ -237,6 +240,9 @@ ul {
 	.h3-bold h3:last-child {
 		text-align: right;
 		max-width: 40%;
+	}
+	#Education, #Experience, #Volunteerism, #Contact {
+		scroll-margin-top: 5em;
 	}
 }
 
