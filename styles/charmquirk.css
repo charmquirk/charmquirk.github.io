@@ -61,7 +61,7 @@ aside img {
 }
 
 .project-label {
-	border-bottom: 2px solid black;
+	border-bottom: var(--border-width) solid black;
 	margin-bottom: var(--main-padding);
 }
 

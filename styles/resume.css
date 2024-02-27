@@ -4,9 +4,9 @@
 
 /* Main Containers */
 
-.page {
+/* .page {
 	border-top: none;
-}
+} */
 
 .container {
 	display: flex;
@@ -25,6 +25,10 @@
 	scroll-margin-top: 9em;
 }
 
+/* aside {
+	border-top: var(--border-width) solid var(--win-lowest);
+} */
+
 
 /* Header */
 
@@ -39,6 +43,8 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 1;
+
+	/* border-top: var(--border-width) solid var(--win-lowest); */
 }
 
 .mini-contacts {
@@ -60,11 +66,11 @@ nav {
 	margin-top: var(--main-padding);
 	padding: 1em;
 	background: var(--win-main);
-	border-top: 2px solid var(--win-highest);
-	border-left: 2px solid var(--win-highest);
-	border-bottom: 2px solid var(--win-low);
-	border-right: 2px solid var(--win-low);
-	outline: 2px solid var(--win-lowest);
+	border-top: var(--border-width) solid var(--win-highest);
+	border-left: var(--border-width) solid var(--win-highest);
+	border-bottom: var(--border-width) solid var(--win-low);
+	border-right: var(--border-width) solid var(--win-low);
+	outline: var(--border-width) solid var(--win-lowest);
 	float: left;
 	position: fixed;
 	z-index: 2;
@@ -116,10 +122,10 @@ nav {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	border-top: 2px solid var(--win-highest);
-	border-left: 2px solid var(--win-highest);
-	border-bottom: 2px solid var(--win-low);
-	border-right: 2px solid var(--win-low);
+	border-top: var(--border-width) solid var(--win-highest);
+	border-left: var(--border-width) solid var(--win-highest);
+	border-bottom: var(--border-width) solid var(--win-low);
+	border-right: var(--border-width) solid var(--win-low);
 	background: var(--win-main);
 	padding: 0.5em;
 	text-align: left;
@@ -127,19 +133,19 @@ nav {
 }
 	
 .navlist button:hover{
-	outline: 2px solid var(--win-lowest);
+	outline: var(--border-width) solid var(--win-lowest);
 	z-index: 1;
 }
 
 .navlist button:active {
-	border-top: 2px solid var(--win-low);
-	border-left: 2px solid var(--win-low);
-	border-bottom: 2px solid var(--win-highest);
-	border-right: 2px solid var(--win-highest);
+	border-top: var(--border-width) solid var(--win-low);
+	border-left: var(--border-width) solid var(--win-low);
+	border-bottom: var(--border-width) solid var(--win-highest);
+	border-right: var(--border-width) solid var(--win-highest);
 }
 
 .navlist button:focus:not(:active) {
-	outline: 2px dotted var(--win-lowest);
+	outline: var(--border-width) dotted var(--win-lowest);
 	outline-offset: -8px;
 }
 
@@ -253,7 +259,7 @@ ul {
 	
 	.label {
 		text-transform: uppercase;
-		border-bottom: #000000 2px solid;
+		border-bottom: #000000 var(--border-width) solid;
 	}
 	.label, .labeled-box, .page, header  {
 		padding: 0;
