@@ -1,0 +1,201 @@
+/* Variables */
+:root {
+
+	/* Window Dialog Bar */
+	--win-left: #000080;
+	--win-right: #1084d0;
+	/* Window Buttons */
+	--win-lowest: #000000;
+	--win-low: #60615F;
+	--win-main: #D5D1C9;
+	--win-highest: #ffffff;
+	/* OS Background */
+	--win-background: #008080;
+	
+	/* Page Elements */
+	--html: var(--win-background);
+	--page: var(--win-highest);
+	--content: #f0f0f0;
+	--text: #000000;
+	--text-clicked: gray;
+	--text-faded: #BFBFBF;
+	--gradient-left: var(--win-left);
+	--gradient-right: var(--content);
+
+	/* Element Sizes */
+	--text-box-padding: 1em;
+	--button-padding: 0.75em;
+}
+
+html, body {
+	background-color: var(--win-lowest);
+	/* background: linear-gradient(180deg, var(--gradient-left) 20%, var(--gradient-right) 100%); */
+	background-image: url("../images/background/clouds1024.png");
+	background-size: cover; /* Adjusts the background image size to cover the entire element */
+	background-position: center; /* Centers the background image */
+	background-attachment: fixed;
+}
+
+a:hover {
+	color: var(--low-light);
+}
+/* Windows2000 dotted border for focused buttons */
+a:focus {
+	outline: var(--border-width) dotted var(--win-lowest); 
+}
+
+a:active {
+	color: var(--text-clicked);
+}
+
+/* Main Containers */
+
+div.page {
+	border: var(--border-width) solid var(--win-lowest);
+	border-top: none;
+}
+
+.pre-content {
+	border-top: var(--border-width) solid var(--win-lowest);
+}
+
+.content {
+	scroll-snap-align: start;
+	scroll-snap-type: y mandatory;
+}
+
+.container {
+	padding: var(--main-padding);
+	padding-top: 0;
+}
+
+.labeled-box {
+	scroll-margin-top: 12em;
+}
+
+.label {
+	background: var(--low-light);
+	background: linear-gradient(90deg, var(--gradient-left) 33%, var(--gradient-right) 100%);
+	padding: var(--text-box-padding);
+	position: sticky;
+	top: 12.33em;
+	border: none;
+}
+
+/* Main Content */
+
+
+
+.label h2 {
+	color: #ffffff;
+}
+
+ul {
+	list-style: square;
+}
+
+
+
+/* Header */
+
+
+
+
+/* Navigation */
+
+nav {
+	/* margin-top: var(--main-padding); */
+	background: var(--win-main);
+	border-top: var(--border-width) solid var(--win-highest);
+	border-left: var(--border-width) solid var(--win-highest);
+	border-bottom: var(--border-width) solid var(--win-low);
+	border-right: var(--border-width) solid var(--win-low);
+	outline: var(--border-width) solid var(--win-lowest);
+	justify-content: space-between;
+	padding: 0;
+	/* float: left; */
+	/* position: fixed; */
+	/* z-index: 2; */
+}
+
+.nav-header {
+	padding: 0 var(--nav-padding);
+}
+
+nav h3 {
+	font-weight: bold;
+}
+
+/* .nav-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 0.5em;
+} */
+
+/* .nav-header > :first-child {
+	padding-right: .5em;
+} */
+/* img.search-file {
+	width: 32px;
+	height: 32px;
+} */
+nav img {
+	/* can't use em because of weird glitch with different sections resizing it */
+	/* width: 2em;
+	height: 2em; */
+	width: 32px;
+	height: 32px;
+	/* min-width: 2em;
+	min-height: 2em; */
+	/* justify-content: center;
+	align-items: center; */
+	display: block;
+}
+
+nav a{
+	padding-right: var(--nav-padding);
+}
+
+nav a:hover {
+	filter: brightness(125%);
+}
+
+nav a:active {
+	filter: brightness(75%);
+}
+
+nav a:focus:hover {
+	background: var(--win-highest);
+}
+
+/* .nav-header h3 {
+	text-align: center;
+	font-weight: bold;
+} */
+
+button {
+	width: 100%;
+	height: 100%;
+	border-top: var(--border-width) solid var(--win-highest);
+	border-left: var(--border-width) solid var(--win-highest);
+	border-bottom: var(--border-width) solid var(--win-low);
+	border-right: var(--border-width) solid var(--win-low);
+}
+	
+button:hover{
+	outline: var(--border-width) solid var(--win-lowest);
+	z-index: 1;
+}
+
+button:active {
+	border-top: var(--border-width) solid var(--win-low);
+	border-left: var(--border-width) solid var(--win-low);
+	border-bottom: var(--border-width) solid var(--win-highest);
+	border-right: var(--border-width) solid var(--win-highest);
+}
+
+button:focus:not(:active) {
+	outline: var(--border-width) dotted var(--win-lowest);
+	outline-offset: -8px;
+}

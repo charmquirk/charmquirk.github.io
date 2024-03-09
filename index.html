@@ -2,68 +2,85 @@
 <html lang="en"> 
 	<head> 
 		<title>Andrew J Gates Resume</title> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<link href="styles/styles.css" type="text/css" rel="stylesheet">
 		<link href="styles/resume.css" type="text/css" rel="stylesheet">
+		<link href="styles/windows2000.css" type="text/css" rel="stylesheet">
+		<!-- <link href="styles/quirkcodes.css" type="text/css" rel="stylesheet"> -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head> 
 	<body> 
 		<div class="page" id="Resume">
-			<div class="container">
-				<aside>
-					<nav>
-						<div class="nav-header">
-							<h3>Navigation</h3>
-							<a href="#"><img src="images/icons/search_file-1.png" class="img-nav" alt="Search file image, from Windows 2000 OS"></a>
-						</div>
-						<ul class="navlist">
+			<div class="pre-content fixed">
+				<nav>
+					<div class="nav-header">
+						<a href="#"><img src="images/icons/search-file-1-upscaled.png" class="search-file" title="Go to the top of the page" alt="Search file image, from Windows 2000 OS"></a>
+						<h3>Navigation</h3>
+					</div>
+					<div class="nav-list">
+						<ul>
 							<li><button onclick="window.location.href='#Education';">Education</button></li>
 							<li><button onclick="window.location.href='#Experience';">Experience</button></li>
 							<li><button onclick="window.location.href='#Volunteerism';">Volunteerism</button></li>
 							<li><button onclick="window.location.href='#Contact';">Contact</button></li>
-							<!-- <li><button onclick="#Projects">Projects</button></li> -->
+							<li><button onclick="window.location.href='#Projects';">Projects</button></li>
 						</ul>
-					</nav>
-				</aside>
+					</div>
+				</nav>
+				<header class="block-vcenter">
+					<h1 class="main flex-hcenter">Andrew J Gates</h1>
+					<h2 class="resume-heading flex-hcenter">Resume</h2>
+					<div class="mini-contacts flex-hcenter">
+							<a href="tel:16072057203">607&#45;205&#45;7203</a>
+							<p>&nbsp;&#124;&nbsp;Vestal, NY 13850&nbsp;&#124;&nbsp;</p>
+							<a href="mailto:andrew.gates.now@gmail.com">andrew.gates.now&#64;gmail.com</a>
+					</div>
+				</header>
+			</div>
+			<div class="container">
 				<div class="content">
-					<header>
-						<h1>Andrew J Gates</h1>
-						<h2 class="resume-heading">Resume</h2>
-						<div class="mini-contacts"><a href="tel:16072057203">607&#45;205&#45;7203</a> &#124; Vestal, NY 13850 &#124; <a href="mailto:andrew.gates.now@gmail.com">andrew.gates.now&#64;gmail.com</a></div>
-					</header>
 					<div id="Education" class="labeled-box">
 						<div class="label">
 							<h2>Education</h2>
 						</div>
 						<div class="text-box">
 							<div class="paragraph">
-								<div class="h3-bold">
-									<h3>Computer Science (B.S.), Applied Computing</h3>
-									<h3>Jan 2024 &#45; Now</h3>
-								</div>
-								<div class="h3-normal">
-									<p>State University of New York Oneonta</p>
-									<p>Oneonta, NY 13820, United States</p>
-								</div>
-							</div>
-							<div class="paragraph">
-								<div class="h3-bold">
-									<h3>Liberal Arts & Sciences (A.S.), GPA 3.675</h3>
-									<h3>May 2023</h3>
-								</div>
-								<div class="h3-normal">
-									<p>State University of New York Broome Community College</p>
-									<p>Binghamton, NY 13905, United States</p>
+								<div class="multi-title">
+									<div class="h3-bold flex-separate">
+										<h3 class="main">Computer Science (B.S.), Applied Computing</h3>
+										<h3>Jan 2024 &#45; Now</h3>
+									</div>
+									<div class="h3-normal flex separation-line">
+										<p>State University of New York Oneonta</p>
+										<p>Oneonta, NY 13820, United States</p>
+									</div>
 								</div>
 							</div>
 							<div class="paragraph">
-								<div class="h3-bold">
-									<h3>Regents Diploma, GPA 3.6</h3> <!-- (with Advanced Designation in Science, English, and Spanish) -->
-									<h3>Jun 2019</h3>
+								<div class="multi-title">
+									<div class="h3-bold flex-separate">
+										<h3 class="main">Liberal Arts & Sciences (A.S.), GPA 3.675</h3>
+										<h3>May 2023</h3>
+									</div>
+									<div class="h3-normal flex separation-line">
+										<p>State University of New York Broome Community College</p>
+										<p>Binghamton, NY 13905, United States</p>
+									</div>
 								</div>
-								<div class="h3-normal">
-									<p>Vestal Senior High School</p>
-									<p>Vestal, NY 13850, United States</p>
+							</div>
+							<div class="paragraph">
+								<div class="multi-title">
+									<div class="h3-bold flex-separate">
+										<h3 class="main">Regents Diploma, GPA 3.6</h3> <!-- (with Advanced Designation in Science, English, and Spanish) -->
+										<h3>Jun 2019</h3>
+									</div>
+									<div class="h3-normal flex separation-line">
+										<p>Vestal Senior High School</p>
+										<p>Vestal, NY 13850, United States</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -74,13 +91,15 @@
 						</div>
 						<div class="text-box">
 							<div class="paragraph">
-								<div class="h3-bold">
-									<h3>Dishwasher &amp; Server</h3>
-									<h3>Oct 2023 &#45; Jan 2024</h3>
-								</div>
-								<div class="h3-normal">
-									<p>International House of Pancakes</p>
-									<p>Vestal, NY 13850, United States</p>
+								<div class="multi-title">
+									<div class="h3-bold flex-separate">
+										<h3 class="main">Dishwasher &amp; Server</h3>
+										<h3>Oct 2023 &#45; Jan 2024</h3>
+									</div>
+									<div class="h3-normal flex separation-line">
+										<p>International House of Pancakes</p>
+										<p>Vestal, NY 13850, United States</p>
+									</div>
 								</div>
 								<ul>
 									<li>Serving up to 5 tables at a time, from 1 to 16 people per table.</li>
@@ -89,13 +108,15 @@
 								</ul>
 							</div>
 							<div class="paragraph">
-								<div class="h3-bold">
-									<h3>Social Media Manager (Internship)</h3>
-									<h3>Sep 2022 &#45; Dec 2022</h3>
-								</div>
-								<div class="h3-normal">
-									<p>Town Square Media, Bryton Acquisition Company, LLC</p>
-									<p>Binghamton, NY 13901, United States</p>
+								<div class="multi-title">
+									<div class="h3-bold flex-separate">
+										<h3 class="main">Social Media Manager (Internship)</h3>
+										<h3>Sep 2022 &#45; Dec 2022</h3>
+									</div>
+									<div class="h3-normal flex separation-line">
+										<p>Town Square Media, Bryton Acquisition Company, LLC</p>
+										<p>Binghamton, NY 13901, United States</p>
+									</div>
 								</div>
 								<ul>
 									<li>Created graphics and discussions to increase community engagement</li>
@@ -104,13 +125,15 @@
 								</ul>
 							</div>
 							<div class="paragraph">
-								<div class="h3-bold">
-									<h3>Deli Associate</h3>
-									<h3>Mar 2022 &#45; Jul 2022</h3>
-								</div>
-								<div class="h3-normal">
-									<p>Weis Markets</p>
-									<p>Vestal, NY 13850, United States</p>
+								<div class="multi-title">
+									<div class="h3-bold flex-separate">
+										<h3 class="main">Deli Associate</h3>
+										<h3>Mar 2022 &#45; Jul 2022</h3>
+									</div>
+									<div class="h3-normal flex separation-line">
+										<p>Weis Markets</p>
+										<p>Vestal, NY 13850, United States</p>
+									</div>
 								</div>
 								<ul>
 									<li>Provided personal service to an average of 30 customers a day, while prepping and stocking the deli
@@ -120,13 +143,15 @@ meat/cheeses for the self&#45;service customer case.</li>
 								</ul>
 							</div>
 							<div class="paragraph">
-								<div class="h3-bold">
-									<h3>Call Center Representative</h3>
-									<h3>Dec 2020 &#45; Feb 2021</h3>
-								</div>
-								<div class="h3-normal">
-									<p>Paper Alternative Solutions / Conduent</p>
-									<p>Endicott, NY 13760, United States</p>
+								<div class="multi-title">
+									<div class="h3-bold flex-separate">
+										<h3 class="main">Call Center Representative</h3>
+										<h3>Dec 2020 &#45; Feb 2021</h3>
+									</div>
+									<div class="h3-normal flex separation-line">
+										<p>Paper Alternative Solutions / Conduent</p>
+										<p>Endicott, NY 13760, United States</p>
+									</div>
 								</div>
 								<ul>
 									<li>Second highest customer service survey scores out of 80+ representatives after only 1 month of work</li>
@@ -135,13 +160,15 @@ meat/cheeses for the self&#45;service customer case.</li>
 								</ul>
 							</div>
 							<div class="paragraph">
-								<div class="h3-bold">
-									<h3>Lifeguard</h3>
-									<h3>May 2017 &#45; Aug 2018</h3>
-								</div>
-								<div class="h3-normal">
-									<p>Town of Vestal Recreation</p>
-									<p>Vestal, NY 13850, United States</p>
+								<div class="multi-title">
+									<div class="h3-bold flex-separate">
+										<h3 class="main">Lifeguard</h3>
+										<h3>May 2017 &#45; Aug 2018</h3>
+									</div>
+									<div class="h3-normal flex separation-line">
+										<p>Town of Vestal Recreation</p>
+										<p>Vestal, NY 13850, United States</p>
+									</div>
 								</div>
 								<ul>
 									<li>Actively surveilled up to 300 patrons, answering concerns, instructing safety precautions, and tending to the
@@ -159,26 +186,30 @@ first aid of any injured patrons.</li>
 						</div>
 						<div class="text-box">
 							<div class="paragraph">
-								<div class="h3-bold">
-									<h3>Film Production Assistant</h3>
-									<h3>Oct 2022</h3>
-								</div>
-								<div class="h3-normal">
-									<p>State University of New York Broome Community College</p>
-									<p>Binghamton, NY 13905, United States</p>
+								<div class="multi-title">
+									<div class="h3-bold flex-separate">
+										<h3 class="main">Film Production Assistant</h3>
+										<h3>Oct 2022</h3>
+									</div>
+									<div class="h3-normal flex separation-line">
+										<p>State University of New York Broome Community College</p>
+										<p>Binghamton, NY 13905, United States</p>
+									</div>
 								</div>
 								<ul>
 									<li>Assisted the Director with scene management and execution.</li>
 								</ul>
 							</div>
 							<div class="paragraph">
-								<div class="h3-bold">
-									<h3>Food Pantry Volunteer</h3>
-									<h3>Feb 2018 &#45; May 2019</h3>
-								</div>
-								<div class="h3-normal">
-									<p>St James Food Pantry</p>
-									<p>Johnson City, NY 13790, United States</p>
+								<div class="multi-title">
+									<div class="h3-bold flex-separate">
+										<h3 class="main">Food Pantry Volunteer</h3>
+										<h3>Feb 2018 &#45; May 2019</h3>
+									</div>
+									<div class="h3-normal flex separation-line">
+										<p>St James Food Pantry</p>
+										<p>Johnson City, NY 13790, United States</p>
+									</div>
 								</div>
 								<ul>
 									<li>Lifting, moving, unpacking, shelving, and organizing 600+ items for 2 hours a day.</li>
@@ -186,13 +217,15 @@ first aid of any injured patrons.</li>
 								</ul>
 							</div>
 							<div class="paragraph">
-								<div class="h3-bold">
-									<h3>YES Leader</h3>
-									<h3>Sep 2017 &#45; Jun 2019</h3>
-								</div>
-								<div class="h3-normal">
-									<p>YES! Leads, Vestal Senior High School</p>
-									<p>Vestal, NY 13850, United States</p>
+								<div class="multi-title">
+									<div class="h3-bold flex-separate">
+										<h3 class="main">YES Leader</h3>
+										<h3>Sep 2017 &#45; Jun 2019</h3>
+									</div>
+									<div class="h3-normal flex separation-line">
+										<p>YES! Leads, Vestal Senior High School</p>
+										<p>Vestal, NY 13850, United States</p>
+									</div>
 								</div>
 								<ul>
 									<li>Spoke at multiple local elementary schools to spread awareness about the dangers of drugs and alcohol</li>
@@ -212,19 +245,19 @@ first aid of any injured patrons.</li>
 							</ul>
 						</div>
 					</div>
-					<!-- <div id="Projects" class="labeled-box">
+					<div id="Projects" class="labeled-box">
 						<div class="label">
 							<h2>Projects</h2>
 						</div>
 						<div class="text-box">
 							<p>WIP</p>
 						</div>
-					</div> -->
+					</div>
 				</div>
 			</div>
 		</div>
 		<footer>
 			<p>&#169;2024</p>
 		</footer>
-	</body> 
+	</body>
 </html> 

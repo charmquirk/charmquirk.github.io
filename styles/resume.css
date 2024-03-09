@@ -1,204 +1,19 @@
-/* Resume Page */
-
-
-
-/* Main Containers */
-
-/* .page {
-	border-top: none;
-} */
-
-.container {
-	display: flex;
-}
-
-.content { /* Experience, Projects, Contact*/
-	margin-left: 13.4em;
-}
-
-.text-box {
-	padding: var(--main-padding);
-}
-
-/* Prevent scrolling/anchor links from not going far enough */
-#Education, #Experience, #Volunteerism, #Contact {
-	scroll-margin-top: 9em;
-}
-
-/* aside {
-	border-top: var(--border-width) solid var(--win-lowest);
-} */
-
-
-/* Header */
-
-header {
-	margin: 0 auto; /* align to center horizontally */
-	justify-content: center; /* center middle horizontally */
-	align-items: center; /* center portfolio with name */
-	text-align: center;
-	width: 100%;
-	height: auto;
-	background: var(--page);
-	position: sticky;
-	top: 0;
-	z-index: 1;
-
-	/* border-top: var(--border-width) solid var(--win-lowest); */
+:root {
+	--text-box-padding: 1em;
 }
 
 .mini-contacts {
-	font-weight: normal;
-	font-size: 1.5em;
 	display: none;
 }
 
-.mini-contacts a {
-	text-decoration: none;
-	font-size: 1em;
+.text-box {
+	padding: var(--text-box-padding);
 }
 
 
-
-/* Navigation */
-
-nav {
-	margin-top: var(--main-padding);
-	padding: 1em;
-	background: var(--win-main);
-	border-top: var(--border-width) solid var(--win-highest);
-	border-left: var(--border-width) solid var(--win-highest);
-	border-bottom: var(--border-width) solid var(--win-low);
-	border-right: var(--border-width) solid var(--win-low);
-	outline: var(--border-width) solid var(--win-lowest);
-	float: left;
-	position: fixed;
-	z-index: 2;
-}
-
-.nav-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 0.5em;
-}
-
-.nav-header > :first-child {
-	padding-right: .5em;
-}
-
-.nav-header img {
-	width: 100%;
-	height: 100%;
-	justify-content: center;
-	align-items: center;
-}
-
-.nav-header a:hover {
-	filter: brightness(125%);
-}
-
-.nav-header a:active {
-	filter: brightness(75%);
-}
-
-.nav-header a:focus:hover {
-	background: var(--win-highest);
-}
-
-.nav-header h3 {
-	text-align: center;
-	font-weight: bold;
-}
-
-.navlist {
-	width: 100%;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.navlist button {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	border-top: var(--border-width) solid var(--win-highest);
-	border-left: var(--border-width) solid var(--win-highest);
-	border-bottom: var(--border-width) solid var(--win-low);
-	border-right: var(--border-width) solid var(--win-low);
-	background: var(--win-main);
-	padding: 0.5em;
-	text-align: left;
-	z-index: 0;
-}
-	
-.navlist button:hover{
-	outline: var(--border-width) solid var(--win-lowest);
-	z-index: 1;
-}
-
-.navlist button:active {
-	border-top: var(--border-width) solid var(--win-low);
-	border-left: var(--border-width) solid var(--win-low);
-	border-bottom: var(--border-width) solid var(--win-highest);
-	border-right: var(--border-width) solid var(--win-highest);
-}
-
-.navlist button:focus:not(:active) {
-	outline: var(--border-width) dotted var(--win-lowest);
-	outline-offset: -8px;
-}
-
-
-
-/* Main Content */
-
-.label {
-	background: var(--low-light);
-	background: linear-gradient(90deg, var(--gradient-left) 33%, var(--gradient-right) 100%);
-	padding: 1em;
-	position: sticky;
-	top: 8.99em;
-}
-
-.label h2 {
-	color: #ffffff;
-}
-
-.h3-bold h3 {
-	display: inline-block;
-}
-
-.h3-bold h3:last-child {
-	float: right;
-	text-align: right;
-}
-
-/* .h3-normal {
-	display: inline-flex;
-} */
-
-/* .h3-normal p:first-child {
-	padding-right: 1em;
-} */
-
-.h3-normal p:last-child {
-	color: var(--text-faded);
-	display: none;
-}
-
-ul {
-	list-style: square;
-}
-
-.text-box .paragraph:last-child {
-	padding-bottom: 0;
-}
-
-
-
+/* Outdated */
 @media (max-aspect-ratio: 1/1){
-	:root {
+	/* :root {
 		--main-padding: 1em;
 	}
 	h1 {
@@ -212,30 +27,32 @@ ul {
 	h3 {
 		font-size: 1em;
 		font-weight: bold;
-	}
-	.page {
+	} */
+	/* .page {
 		margin: auto;
 		padding: 0;
 	}
 	.container {
 		display: flex;
 		justify-content: left;
-	}
-	.content {
-		/* margin-left: 7.9em; */
+	} */
+	/* .content {
 		margin: 0;
-	}
-	nav {
+	} */
+	/* nav {
 		display: none;
 	}
 	button {
 		font-size: 1em;
-	}
-	.text-box {
+	} */
+	/* .text-box {
 		padding: var(--main-padding);
 		margin: 0;
-	}
-	.label {
+	} */
+	/* .mini-contacts {
+		display: block;
+	} */
+	/* .label {
 		top: 5em;
 	}
 	.h3-bold h3, .h3-normal p {
@@ -246,54 +63,32 @@ ul {
 	.h3-bold h3:last-child {
 		text-align: right;
 		max-width: 40%;
-	}
+	} */
 	#Education, #Experience, #Volunteerism, #Contact {
 		scroll-margin-top: 5em;
 	}
 }
 
+
+
+
+
+
+/* Keep these */
+
+
 @media print {
-	:root {
-		--main-padding: 1em;
-	}
-	
-	.label {
-		text-transform: uppercase;
-		border-bottom: #000000 var(--border-width) solid;
-	}
-	.label, .labeled-box, .page, header  {
+	.label, .labeled-box {
 		padding: 0;
 		margin: 0;
 	}
-	.page {
-		border: none;
-	}
-	.text-box {
-		padding: 0.5em 0;
-	}
-	.text-box .paragraph:last-child {
-		padding-bottom: var(--main-padding);
-	}
-	a {
-		text-decoration: none;
-	}
-	aside, footer, .resume-heading {
-		display: none; /* Hide navigation */
-	}
 	.mini-contacts {
-		display: block;
-		font-size: 1em;
+		display: flex;
 	}
-	header {
-		padding-bottom: 0.5em;
-	}
-	header h1 {
-		padding-bottom: 0.25em;
-	}
-	.h3-normal p:last-child {
-		display: block;
-	}
-	#Contact {
+	
+	#Contact, .resume-heading  {
 		display: none;
 	}
 }
+
+
