@@ -76,6 +76,28 @@
 
 /* Keep these */
 
+@media (max-aspect-ratio: 1/1){
+	.h3-bold h3 {
+		max-width: 60%;
+		clear: left;
+	}
+
+	.h3-bold h3:last-child {
+		text-align: right;
+		max-width: 40%;
+	}
+	.h3-normal {
+		display: block;
+		max-width: 100%;
+	}
+	.h3-normal :last-child {
+		display: none;
+	}
+	.separation-line *:not(:last-child)::after {
+		content: none;
+	}
+
+}
 
 @media print {
 	.label, .labeled-box {

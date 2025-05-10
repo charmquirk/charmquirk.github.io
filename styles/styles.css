@@ -14,8 +14,8 @@
 	--accent: #f0f0f0;
 	--accent-light: #ffffff;
 
-	--html: var(--acccent-light);
-	--page: var(--acccent-light);
+	--html: var(--accent-light);
+	--page: var(--accent-light);
 	--content: var(--accent-light);
 	--text: var(--accent-darkest);
 	--text-clicked: var(--acccent-darker);
@@ -26,6 +26,7 @@
 	/* Element Sizes */
 	--border-width: 2px;
 	--button-padding: .5em;
+	--header-padding: 1.5em;
 	--main-padding: 1.5em;
 	--nav-padding: 0.5em;
 	--nav-list-padding: var(--button-padding);
@@ -111,20 +112,6 @@ button {
 
 /* Main Containers */
 
-.container {
-	display: block;
-}
-
-.pre-content {
-	width: inherit;
-}
-
-.content {
-	display: block;
-	background: var(--content);
-	margin: 0 auto;
-}
-
 .page {
 	margin: 0 auto;
 	background: var(--page);
@@ -134,8 +121,29 @@ button {
 	width: 65em;
 	min-height: 256px;
 	min-width: 256px;
-	max-width: 100%;
+	max-width: 100vw;
+	position: relative;
 }
+
+.container {
+	display: block;
+	margin: var(--main-padding);
+	margin-top: 0;
+	position: relative;
+	/* width: inherit; */
+}
+
+/* .pre-content {
+	width: inherit;
+} */
+
+.content {
+	display: block;
+	background: var(--content);
+	margin: 0 auto;
+}
+
+
 
 .text-box {
     padding: var(--main-padding) 0; /* top and bottom */
@@ -186,6 +194,7 @@ button {
 	top: 0;
 	z-index: 1;
 	background: var(--page);
+	max-width: 100vw;
 }
 
 .label {
@@ -199,7 +208,7 @@ button {
 /* Header */
 
 header {
-	padding: var(--main-padding) 0;
+	padding: var(--header-padding) 0;
 }
 
 
@@ -260,41 +269,14 @@ footer {
 		font-size: 1em;
 		font-weight: bold;
 	}
-	/* .page {
-		margin: auto;
-		padding: 0;
-	}
-	.container {
-		display: flex;
-		justify-content: left;
-	} */
-	/* .content {
-		margin: 0;
-	} */
 	nav {
 		display: none;
 	}
 	button {
 		font-size: 1em;
 	}
-	/* .text-box {
-		padding: var(--main-padding);
-		margin: 0;
-	} */
 	.label {
-		top: 5em;
-	}
-	.h3-bold h3, .h3-normal p {
-		max-width: 60%;
-		clear: left;
-	}
-	
-	.h3-bold h3:last-child {
-		text-align: right;
-		max-width: 40%;
-	}
-	#Education, #Experience, #Volunteerism, #Contact {
-		scroll-margin-top: 5em;
+		top: 2em;
 	}
 }
 

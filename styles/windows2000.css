@@ -24,7 +24,7 @@
 
 	/* Element Sizes */
 	--text-box-padding: 1em;
-	--button-padding: 0.75em;
+	--button-padding: 0.5em;
 }
 
 html, body {
@@ -50,27 +50,18 @@ a:active {
 
 /* Main Containers */
 
-div.page {
+.page {
 	border: var(--border-width) solid var(--win-lowest);
 	border-top: none;
+	max-width: 100vw;
 }
 
 .pre-content {
 	border-top: var(--border-width) solid var(--win-lowest);
 }
 
-.content {
-	scroll-snap-align: start;
-	scroll-snap-type: y mandatory;
-}
-
-.container {
-	padding: var(--main-padding);
-	padding-top: 0;
-}
-
 .labeled-box {
-	scroll-margin-top: 12em;
+	scroll-margin-top: 13em;
 }
 
 .label {
@@ -96,10 +87,6 @@ ul {
 
 
 
-/* Header */
-
-
-
 
 /* Navigation */
 
@@ -112,34 +99,20 @@ nav {
 	border-right: var(--border-width) solid var(--win-low);
 	outline: var(--border-width) solid var(--win-lowest);
 	justify-content: space-between;
-	padding: 0;
+	padding: var(--nav-padding);
 	/* float: left; */
 	/* position: fixed; */
 	/* z-index: 2; */
 }
 
 .nav-header {
-	padding: 0 var(--nav-padding);
+	padding-right: var(--nav-padding);
 }
 
 nav h3 {
 	font-weight: bold;
 }
 
-/* .nav-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 0.5em;
-} */
-
-/* .nav-header > :first-child {
-	padding-right: .5em;
-} */
-/* img.search-file {
-	width: 32px;
-	height: 32px;
-} */
 nav img {
 	/* can't use em because of weird glitch with different sections resizing it */
 	/* width: 2em;
@@ -153,7 +126,7 @@ nav img {
 	display: block;
 }
 
-nav a{
+nav a {
 	padding-right: var(--nav-padding);
 }
 
@@ -169,18 +142,16 @@ nav a:focus:hover {
 	background: var(--win-highest);
 }
 
-/* .nav-header h3 {
-	text-align: center;
-	font-weight: bold;
-} */
-
 button {
-	width: 100%;
-	height: 100%;
+	padding: var(--button-padding);
 	border-top: var(--border-width) solid var(--win-highest);
 	border-left: var(--border-width) solid var(--win-highest);
 	border-bottom: var(--border-width) solid var(--win-low);
 	border-right: var(--border-width) solid var(--win-low);
+}
+
+.nav-list *:not(:last-child) {
+	margin-right: var(--nav-padding);
 }
 	
 button:hover{
@@ -198,4 +169,35 @@ button:active {
 button:focus:not(:active) {
 	outline: var(--border-width) dotted var(--win-lowest);
 	outline-offset: -8px;
+}
+
+
+
+/* Footer */
+
+footer {
+	margin: var(--main-padding);
+}
+
+
+@media (max-aspect-ratio: 1/1){
+	.page {
+		border: none;
+		border-bottom: var(--border-width) solid var(--win-lowest);
+	}
+	.container {
+		border: var(--border-width) solid var(--win-lowest);
+	}
+	.pre-content {
+		border-top: none;
+	}
+	.labeled-box {
+		scroll-margin-top: 5em;
+	}
+	.label {
+		top: 6em;
+	}
+	.paragraph {
+		margin-bottom: var(--main-padding);
+	}
 }
