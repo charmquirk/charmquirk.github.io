@@ -1,3 +1,3 @@
 # charmquirk.github.io
 
-Personal [website](https://charmquirk.github.io/). Features my resume and various creative projects.
+A [website](https://charmquirk.github.io/) featuring my projects.
