@@ -33,24 +33,18 @@ html, body {
     border: var(--main-border);
     border-radius: var(--border_radius);
     padding: var(--text-box-padding);
-    width: 100%;
 }
 
-#sidebar {
-    /* position: fixed; */
-    margin: 0;
-    width: 33vw;
+.sidebar {
+    max-width: 33%;
+    width: 5em;
     float: left;
-    padding: 0;
-    height: 100%;
-    overflow: auto;
 }
 
-#content {
-    width: 66vw;
-    margin-left: 33%;
+.page {
+    width: 66%;
 }
 
-#main > {
+.main {
     display: flex;
 }

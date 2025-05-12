@@ -14,7 +14,7 @@ html, body {
 }
 
 aside, div, header, footer {
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	border: none;
 	background: none;
