@@ -1,42 +1,9 @@
 /* Includes styles used across all pages and themes */
 
-/* Variables */
-:root {
-
-
-	--scroll-margin-top: 8em;
-
-
-	/* Page Colors */
-	--accent-darkest: #000000;
-	--accent-darker: gray;
-	--accent-dark: #BFBFBF;
-	--accent: #f0f0f0;
-	--accent-light: #ffffff;
-
-	--html: var(--accent-light);
-	--page: var(--accent-light);
-	--content: var(--accent-light);
-	--text: var(--accent-darkest);
-	--text-clicked: var(--acccent-darker);
-	--text-faded: var(--acccent-dark);
-	--gradient-left: var(--acccent-light);
-	--gradient-right: var(--acccent-darkest);
-
-	/* Element Sizes */
-	--border-width: 2px;
-	--button-padding: .5em;
-	--header-padding: 1.5em;
-	--main-padding: 1.5em;
-	--nav-padding: 0.5em;
-	--nav-list-padding: var(--button-padding);
-}
-
-
 /* Setting Defaults */
 
 html, body {
-	background: var(--html);
+	background: none;
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
@@ -47,7 +14,7 @@ html, body {
 }
 
 aside, div, header, footer {
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	border: none;
 	background: none;
@@ -58,25 +25,13 @@ a, button, caption, h1, h2, h3, li, ol, p, table, td, th, ul {
 	padding: 0;
 	font-family: 'Times New Roman', serif;
 	background: none;
-	color: var(--text);
+	color: black;
 	font-size: 16px;
 	font-weight: normal;
 	font-style: normal;
 	line-height: 1.25em;
 	text-decoration: none;
 	border: none;
-}
-
-a:hover {
-	color: var(--low-light);
-}
-
-a:focus {
-	outline: var(--border-width) solid var(--text);
-}
-
-a:active {
-	color: var(--text-clicked);
 }
 
 ol, ul {
@@ -103,214 +58,4 @@ h3 {
 
 p {
 	font-size: 1em;
-}
-
-button {
-	padding: var(--button-padding);
-	/* border: var(--border-width) solid var(--accent-darkest); */
-}
-
-/* Main Containers */
-
-.page {
-	margin: 0 auto;
-	background: var(--page);
-	display: block;
-
-	/* Page Sizing */
-	width: 65em;
-	min-height: 256px;
-	min-width: 256px;
-	max-width: 100vw;
-	position: relative;
-}
-
-.container {
-	display: block;
-	margin: var(--main-padding);
-	margin-top: 0;
-	position: relative;
-	/* width: inherit; */
-}
-
-/* .pre-content {
-	width: inherit;
-} */
-
-.content {
-	display: block;
-	background: var(--content);
-	margin: 0 auto;
-}
-
-
-
-.text-box {
-    padding: var(--main-padding) 0; /* top and bottom */
-}
-
-.text-box .paragraph:not(:last-child) {
-	padding-bottom: var(--main-padding);
-}
-
-/* .label {
-	scroll-margin-top: 12em;
-	scroll-snap-align: start;
-	scroll-snap-type: y mandatory;
-} */
-
-
-/* Container Styles */
-
-.block-vcenter {
-	display: block;
-	align-items: center;
-}
-
-.flex {
-	display: flex;
-}
-
-.flex-separate {
-	display: flex;
-	justify-content: space-between;
-}
-
-.flex-hcenter { /* align to center horizontally */
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-}
-
-
-.separation-line *:not(:last-child)::after {
-	content: "   |   ";
-    white-space: pre;
-}
-
-.fixed {
-	position: sticky;
-	top: 0;
-	z-index: 1;
-	background: var(--page);
-	max-width: 100vw;
-}
-
-.label {
-	border-bottom: #000000 var(--border-width) solid;
-}
-
-
-
-
-
-/* Header */
-
-header {
-	padding: var(--header-padding) 0;
-}
-
-
-
-/* Navigation */
-
-nav, nav * {
-	display: flex;
-	flex-wrap: wrap;
-	text-align: center;
-	align-items: center;
-}
-
-nav {
-	justify-content: center;
-	padding: var(--nav-padding) 0;
-	max-width: 100%;
-	/* background-color: #BFBFBF; */
-	/* position: fixed; */
-	/* max-width: 100vw; */
-	/* left: 50%; */
-	/* transform: translate(-50%, 0); */
-}
-
-.nav-list {
-	/* width: 100%; */
-	padding-left: var(--nav-list-padding);
-	/* display: flex;
-	justify-content: space-between; */
-}
-
-.nav-list ul {
-	padding: 0;
-}
-
-
-/* Footer */
-
-footer {
-	text-align: center;
-}
-
-
-
-@media (max-aspect-ratio: 1/1){
-	:root {
-		--main-padding: 1em;
-	}
-	h1 {
-		font-size: 2em;
-		font-weight: bold;
-	}
-	h2 {
-		font-size: 1em;
-		font-weight: bold;
-	}
-	h3 {
-		font-size: 1em;
-		font-weight: bold;
-	}
-	nav {
-		display: none;
-	}
-	button {
-		font-size: 1em;
-	}
-	.label {
-		top: 2em;
-	}
-}
-
-@media print {
-	:root {
-		--main-padding: 1em;
-	}
-	h1 {
-		font-size: 2em;
-		font-weight: bold;
-	}
-	h2 {
-		font-size: 1em;
-		font-weight: bold;
-	}
-	h3 {
-		font-size: 1em;
-		font-weight: bold;
-	}
-	.label {
-		text-transform: uppercase;
-		/* border-bottom: #000000 var(--border-width) solid; */
-	}
-	.page, header  {
-		padding: 0;
-		margin: 0;
-	}
-	a {
-		text-decoration: none;
-	}
-	aside, footer, nav {
-		display: none; /* Hide navigation */
-	}
-	header {
-		padding-bottom: 0.5em;
-	}
 }

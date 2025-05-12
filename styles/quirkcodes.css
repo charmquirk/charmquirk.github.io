@@ -15,7 +15,7 @@
 	--gradient-right: var(--acccent-darkest);
 
     --text-box-padding: 1.5em;
-    --main-border: .25em solid var(--orange);
+    --main-border: .15em solid var(--orange);
 }
 
 a, button, caption, h1, h2, h3, li, ol, p, table, td, th, ul {
@@ -25,86 +25,26 @@ a, button, caption, h1, h2, h3, li, ol, p, table, td, th, ul {
 
 /* Main Containers */
 
-.container {
-    padding: 0;
+html, body {
+    background: var(--orange-dark);
 }
 
-.content {
+.box {
     border: var(--main-border);
     border-radius: var(--border_radius);
-    overflow: hidden;
+    padding: var(--text-box-padding);
 }
 
-.label {
-    padding: 1em var(--text-box-padding);
-    background: var(--orange);
-}
-.label h2 {
-    color: var(--orange-dark);
-}
-.labeled-box {
-	scroll-margin-top: 12em;
-}
-.content > .labeled-box:first-child {
-    scroll-margin-top: 14em;
+.sidebar {
+    max-width: 33%;
+    width: 5em;
+    float: left;
 }
 
-/* .h3-normal p:last-child:before {
-    content: "   |   ";
-    white-space: pre;
-} */
-
-
-/* Main Content */
-
-h3.main {
-    color:white;
-}
-ul li {
-    list-style: circle;
-    color: var(--orange-medium);
+.page {
+    width: 66%;
 }
 
-
-
-
-/* Navigation */
-
-nav {
-    /* border: .25em solid var(--orange); */
-    background: white;
-    border-bottom-left-radius: var(--border_radius);
-    border-bottom-right-radius: var(--border_radius);
-}
-
-nav * {
-    color: var(--orange-dark);
-}
-
-.nav-header {
-    display: none;
-}
-
-/* Buttons */
-	
-button:hover{
-	background: var(--orange);
-    border-radius: .5em;
-	z-index: 1;
-}
-
-button:hover * {
-    color: var(--accent-light);
-    
-}
-
-button:active {
-	border-top: var(--border-width) solid var(--win-low);
-	border-left: var(--border-width) solid var(--win-low);
-	border-bottom: var(--border-width) solid var(--win-highest);
-	border-right: var(--border-width) solid var(--win-highest);
-}
-
-button:focus:not(:active) {
-
+.main {
+    display: flex;
 }
